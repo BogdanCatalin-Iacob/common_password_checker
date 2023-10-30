@@ -23,7 +23,11 @@ def main():
     Accepts user password input
     '''
     user_input: str = input('Enter your desired password: ')
-    check_password(user_input)
+    if len(user_input) >= 3:
+        check_password(user_input)
+    else:
+        print('Please enter at least 3 character!')
+        main()
 
 
 if __name__ == '__main__':
