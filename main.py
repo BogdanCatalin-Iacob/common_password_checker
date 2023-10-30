@@ -16,3 +16,15 @@ def check_password(password: str):
             return
 
     print(f'{password} is Unique!')
+
+
+def main():
+    '''
+    Accepts user password input
+    '''
+    user_input: str = input('Enter your desired password: ')
+    check_password(user_input)
+
+
+if __name__ == '__main__':
+    main()
